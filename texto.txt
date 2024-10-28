@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Trade - Intercambia conocimiento, transforma tu futuro</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #4f46e5;
+            --accent-color: #22c55e;
+            --text-color: #1f2937;
+            --light-bg: #f3f4f6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .hero {
+            padding: 8rem 2rem 4rem;
+            background: var(--light-bg);
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .features {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            padding: 2rem;
+            border-radius: 0.5rem;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .segments {
+            background: var(--light-bg);
+            padding: 4rem 2rem;
+        }
+
+        .segments-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .segment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .segment-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            background: var(--text-color);
+            color: white;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <h2>Smart Trade</h2>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Características</a>
+                <a href="#segments">Segmentos</a>
+                <a href="#contact">Contacto</a>
+                <a href="#login" class="cta-button">Iniciar Sesión</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Intercambia conocimiento, transforma tu futuro</h1>
+        <p>Una plataforma digital que te permite intercambiar habilidades y conocimientos de manera flexible y accesible.</p>
+        <a href="#register" class="cta-button">Comienza Ahora</a>
+    </section>
+
+    <section class="features" id="features">
+        <h2>Nuestros Pilares Fundamentales</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Accesibilidad y Flexibilidad</h3>
+                <p>Sistema de créditos y suscripción que permite intercambiar habilidades sin barreras financieras significativas.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Calidad y Confianza</h3>
+                <p>Sistema de valoraciones y verificación que garantiza la calidad de la enseñanza y genera confianza entre usuarios.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Sostenibilidad</h3>
+                <p>Fomentamos habilidades sostenibles y prácticas responsables para crear un impacto positivo en la sociedad.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="segments" id="segments">
+        <div class="segments-container">
+            <h2>¿Para quién es Smart Trade?</h2>
+            <div class="segment-grid">
+                <div class="segment-card">
+                    <h3>Estudiantes y Profesionales</h3>
+                    <p>Desarrolla habilidades prácticas aplicables a tu carrera de forma económica.</p>
+                </div>
+                <div class="segment-card">
+                    <h3>Freelancers y Emprendedores</h3>
+                    <p>Aprende y enseña habilidades para destacar y crecer profesionalmente.</p>
+                </div>
+                <div class="segment-card">
+                    <h3>Educadores y Mentores</h3>
+                    <p>Comparte tus conocimientos y obtén beneficios adicionales.</p>
+                </div>
+                <div class="segment-card">
+                    <h3>Organizaciones</h3>
+                    <p>Oportunidades de desarrollo para empleados o estudiantes mediante intercambios de habilidades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <div>
+                <h3>Smart Trade</h3>
+                <p>Intercambia conocimiento, transforma tu futuro</p>
+            </div>
+            <div>
+                <h4>Contacto</h4>
+                <p>Email: info@smarttrade.com</p>
+                <p>Tel: (+34) 900 123 456</p>
+            </div>
+            <div>
+                <h4>Síguenos</h4>
+                <p>Instagram</p>
+                <p>LinkedIn</p>
+                <p>YouTube</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll para los enlaces del menú
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
